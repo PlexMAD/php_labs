@@ -20,18 +20,18 @@
     <header class = "container">
       <div class="flex-container">
         <img src = "../images/Politech.png" class="lab_logo"></img>
-        <h1>Домашняя работа: Hello, World!</h1>
+        <h1>Домашняя работа: Feedback Form</h1>
       </div>
       <nav class="flex-container">
         <ul>
-          <li><a href= "form.php">Form</a></li>
+          <li><a href= "index.php">Index</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <?php
-          echo "Hello, world!"
-      ?>
+        <textarea><?php
+        print_r(get_headers('https://vk.com'));?></textarea>
+        <a href="form.php">Назад</a>
     </main>
     <footer>
       <div class="container">
